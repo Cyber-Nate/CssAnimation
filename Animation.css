@@ -1,0 +1,113 @@
+body{
+    background-image: url(images/);
+  background-color: rgb(58, 55, 55);
+
+}
+div{
+    background-image: url(images/images\ \(50\).jpeg);
+    background-size: cover;
+    display: inline;
+}
+.ani{
+    display: flex;
+    width: 100px;
+    height: 100px ;
+    position: relative;
+    background-color: aqua;
+    animation: square 2s   linear 0.5s infinite alternate forwards;
+
+}
+
+@keyframes square{
+    0%{
+        background-image: url(images/images\ \(59\).jpeg);
+        left: 0px;
+        top: 0px;
+        border: 5px salmon;
+    }
+    25%{
+        background-image: url(images/images\ -\ 2020-08-14T135730.813.jpeg);
+        left: 400px;
+        top: 0px;
+        border: 5px rgb(117, 32, 22);
+        border-radius: 50px;
+    }
+    50%{
+        background-image: url(images/images\ -\ 2020-08-14T135720.617.jpeg);
+        left: 400px;
+        top: 500px;
+        border: 5px rgb(29, 11, 9);
+    }
+    75%{
+        background-image: url(images/images\ \(47\).jpeg);
+        left: 0px;
+        top: 500px;
+        border: 5px rgb(226, 208, 206);
+        border-radius: 50px;
+    }
+    100%{
+        background-image: url(images/images\ \(49\).jpeg);
+        left: 0px;
+        top: 0px;
+        border: 5px rgb(250, 236, 114);
+    }
+}
+
+/*second animation*/
+#circle {
+    width: 200px;
+    height: 200px;
+    border: 10px solid red;
+    margin: 0px auto;
+    margin-top: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    animation: circle 3s infinite alternate forwards;
+
+    
+}
+
+@keyframes circle{
+    0%{
+        border-color: rgb(247, 79, 13); transform: scale(1);
+    }
+    25%{
+        border-color: rgb(191, 250, 135); transform: scale(1.2);
+    }
+    50%{
+        border-color: rgb(135, 250, 231); transform: scale(1.3);
+    }
+    75%{
+        border-color: rgb(250, 135, 202); transform: scale(1.2);
+        
+    }
+    100%{
+        border-color: rgb(161, 17, 17); transform: scale(1);
+    }
+
+}
+
+#squ{
+    width: 75px;
+    height: 75px;
+    border: 5px solid lightblue;
+    animation: squ 3s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes squ{
+    0%{ transform: rotate(0deg);}
+    25%{
+        border-color: lime; border-width: 10px;
+    }
+    50%{
+        border-color: aqua; border-width: 20px;
+    }
+    75%{ 
+        border-color: yellow; border-width: 25px;
+    }
+    100%{
+        transform: rotate(360deg); border-width: 5px;
+    }
+}
